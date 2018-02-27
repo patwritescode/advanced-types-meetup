@@ -1,3 +1,11 @@
+/**
+ * Intersections
+ * - Combine multiple types into one
+ * - Resulting type will have all members of all types intersected
+ * - Used primarily for concepts that don't always fit the class object-oriented
+ *   mold, which is very common in JS.
+ */
+
 interface IStateProps {
     title: string;
 }

@@ -1,6 +1,11 @@
 /**
- * "pet is Cat" is the type guard declaration where the function result is the expression
-    to satisfy the claim
+ * Type Guards
+ * - Union Type example used a "typeof" type guard for primitive types
+ * - Classes and Functions can use instanceof type guards but be cautious
+ *   since you can't always guarantee your objects will maintain their types
+ *   after mutation by external libs.
+ * - User Defined type guards use an expression to perform a runetime check that
+ *   guarantees the type in some scope.
  */
 interface Fish {
     swim: () => void;

@@ -1,0 +1,27 @@
+Hi my name is Patrick Dunn
+
+I am a Lead Developer here at EF GoAheadTours
+
+We are currently hiring full stack senior developers. Feel free to reach out to me or chat
+with me after if you're interested.
+
+TypeScript!
+- At the time of TypeScript's 5th birthday (October 2017), there were 7.5 million
+downloads per month
+- In the last month there has been 9.5 million downloads
+- In a 2017 survey by Stack Overflow, TypeScript was the community's #3 most loved
+programming language with a question growth of 142% year-to-year.
+- GitHub's 2017 Octoverse report shows TypeScript as the 11th most used language
+- As of right now, Definitely Typed has over 4,000 typings contributed by thousands of people
+
+More and more popular frameworks and libraries are being written or rewritten in TypeScript!
+- Angular
+- Aurelia
+- Ionic
+- NativeScript
+- Glimmer
+- Urql
+- Apollo
+- Formik
+- Inverisfy
+- and more!

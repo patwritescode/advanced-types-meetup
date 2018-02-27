@@ -1,3 +1,10 @@
+/**
+ * Type Aliases
+ * - Assigns a name to an existing type, does not declare a new type
+ * - Cannot be extended or implemented from unless the type consists solely of extendable
+ *   and implementable types.
+ * - Can directly declare primitive, union, and intersected types
+ */
 interface IStateProps {
     title: string;
 }
