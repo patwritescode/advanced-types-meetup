@@ -1,7 +1,7 @@
 /**
  * What's new in 2.7 for types?
  * - Improved type inference for object literals
- * - Constant named properties
+ * - Constant named properties and unique symbols
  * - Type guards inferred from 'in' operator
  * - numeric separators
  */
@@ -12,11 +12,23 @@ const val = obj.text;
 // the above fails because obj type is inferred as {} instead of
 // { text: string } | { text? : undefined }
 
+// unique symbol only allowed on const or readonly static properties. no two unique
+// symbols can be assignble or comparable to each other.
+const Bar: unique symbol = Symbol();
+class C {
+    static readonly StaticSymbol: unique symbol = Symbol();
+}
 
- 
-const SERIALIZE = Symbol("some-key");
+// example on how to use 
+const SERIALIZE: unique symbol = Symbol();
 interface ISerializable {
     [SERIALIZE](obj: {}): string;
+}
+
+class JSONSerializableItem implements ISerializable {
+    [SERIALIZE](obj: {}) {
+        return JSON.stringify(obj);
+    }
 }
 // the above is valid in 2.7
 
